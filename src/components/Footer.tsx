@@ -5,10 +5,10 @@ const Footer = () => {
     <footer>
       {/* Newsletter Section  */}
       <section className="bg-gray-400 py-28">
-        <div className="flex flex-col items-center justify-between gap-10 px-6 mx-auto max-w-[90rem] md:flex-row">
+        <div className="flex flex-col items-center justify-between gap-10 px-6 mx-auto max-w-[90rem] md:flex-row p-[1rem]">
           {/* Left side */}
           <div className="flex-1">
-            <h2 className="mb-4 text-6xl text-white uppercase font-dmserif">
+            <h2 className="mb-4 text-5xl text-white uppercase font-dmserif">
               NEWSLETTER
             </h2>
             <p className="text-white">
@@ -38,14 +38,14 @@ const Footer = () => {
 
       {/* Social  */}
 
-      <section className="pt-16">
+      <section className="pt-16 bg-slate-100">
         <div className="max-w-[90rem] mx-auto flex flex-col md:flex-row justify-between gap-10">
           {/* Left side */}
-          <div className="flex-1">
-            <h2 className="text-4xl font-light leading-tight uppercase font-dmserif text-stone-600">
+          <div className="flex-1 pl-[4rem]">
+            <h2 className="text-3xl font-light leading-tight uppercase font-dmserif text-stone-600">
               Trusted Sourcing Partner
             </h2>
-            <p className="max-w-xl mt-4 text-sm text-stone-700 md:text-base">
+            <p className="max-w-lg mt-4 text-sm text-stone-700 md:text-base">
               We connect you with reliable, low-cost suppliers. Our solutions
               optimize your supply chain and create real value for your
               business.
@@ -72,7 +72,7 @@ const Footer = () => {
           <div className="grid flex-1 grid-cols-2 gap-4 md:grid-cols-3">
             {/* Column 1: Company */}
             <div className="flex flex-col gap-2">
-              <h3 className="font-serif text-lg uppercase text-stone-800">
+              <h3 className="font-serif uppercase text-stone-800">
                 Company
               </h3>
               <a href="#" className="text-stone-600 hover:text-stone-800">

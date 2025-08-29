@@ -17,7 +17,7 @@ const Navbar = () => {
 
   const navItems = [
     { name: "HOME", path: "/" },
-    { name: "ABOUT", path: "/about" },
+    { name: "ABOUT", path: "/" },
     { name: "SERVICES", path: "/" },
     { name: "SHOWROOM", path: "/" },
     { name: "CLIENTS", path: "/" },
@@ -33,7 +33,7 @@ const Navbar = () => {
         scrolled ? "bg-white shadow-md" : "bg-transparent"
       }`}
     >
-      <div className="px-4 mx-auto max-w-[95rem] sm:px-6 lg:px-8">
+      <div className="px-4 mx-auto max-w-[85rem] sm:px-6 lg:px-8">
         <div className="flex items-center h-28">
           {/* Logo - positioned at far left */}
           <div className="flex items-center flex-shrink-0">
@@ -68,7 +68,7 @@ const Navbar = () => {
                 <Link
                   key={item.name}
                   to={item.path}
-                  className={`text-gray-700 hover:text-gray-800 transition-colors duration-200 text-base md:text-md lg:text-lg whitespace-nowrap ${
+                  className={`text-gray-700 hover:text-gray-800 transition-colors duration-200 text-base md:text-md lg:text-[1rem] whitespace-nowrap ${
                     location.pathname === item.path ? "text-gray-800" : ""
                   }`}
                 >
