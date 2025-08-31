@@ -1,10 +1,27 @@
+import AboutSection from "../components/HomeComponents/AboutSection";
+import HeroSection from "../components/HomeComponents/HeroSection";
+import OurNumberComponents from "../components/HomeComponents/OurNumberComponents";
 
 const Home = () => {
   return (
-    <section className="h-[90vh]">
+    <div>
+      {/* Hero Section  */}
+      <section>
+        <HeroSection />
+      </section>
 
-    </section>
-  )
-}
+      {/* about section  */}
+      <section className="h-[90vh]">
+        <AboutSection />
+      </section>
 
-export default Home
+      {/* Our number section  */}
+
+      <section>
+        <OurNumberComponents />
+      </section>
+    </div>
+  );
+};
+
+export default Home;

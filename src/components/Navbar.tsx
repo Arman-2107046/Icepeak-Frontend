@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu } from "lucide-react";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,7 +31,7 @@ const Navbar = () => {
   return (
     <header
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? "bg-white shadow-md" : "bg-transparent"
+        scrolled ? "bg-gray-100 shadow-md" : "bg-transparent"
       }`}
     >
       <div className="px-4 mx-auto max-w-[85rem] sm:px-6 lg:px-8">
@@ -76,6 +77,11 @@ const Navbar = () => {
                 </Link>
               ))}
             </nav>
+
+            
+            <div className="mx-4">
+              <LanguageSwitcher />
+            </div>
           </div>
         </div>
       </div>
