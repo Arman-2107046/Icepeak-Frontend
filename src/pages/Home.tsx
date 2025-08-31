@@ -1,6 +1,7 @@
 import AboutSection from "../components/HomeComponents/AboutSection";
 import HeroSection from "../components/HomeComponents/HeroSection";
-import OurNumberComponents from "../components/HomeComponents/OurNumberComponents";
+import Services from "../components/HomeComponents/Services";
+// import OurNumberComponents from "../components/HomeComponents/OurNumberComponents";
 
 const Home = () => {
   return (
@@ -11,15 +12,21 @@ const Home = () => {
       </section>
 
       {/* about section  */}
-      <section className="h-[90vh]">
+      <section >
         <AboutSection />
       </section>
 
       {/* Our number section  */}
-
+{/* 
       <section>
         <OurNumberComponents />
-      </section>
+      </section> */}
+
+<section>
+  <Services/>
+</section>
+
+
     </div>
   );
 };
