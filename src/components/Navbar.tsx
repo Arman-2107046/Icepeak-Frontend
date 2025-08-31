@@ -31,7 +31,7 @@ const Navbar = () => {
   return (
     <header
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? "bg-gray-100 shadow-md" : "bg-transparent"
+        scrolled ? "bg-gray-100 shadow-md opacity-90" : "bg-transparent"
       }`}
     >
       <div className="px-4 mx-auto max-w-[85rem] sm:px-6 lg:px-8">

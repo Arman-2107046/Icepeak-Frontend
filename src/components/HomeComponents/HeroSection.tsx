@@ -10,7 +10,7 @@ const HeroSection = () => {
       >
         {/* Overlay gradient if you want */}
         {/* <div className="absolute top-0 left-0 z-10 w-full h-full bg-black/40" /> */}
-
+{/* bg-[rgba(156,163,175,0.5)] */}
         <motion.div
           initial={{ opacity: 0, x: -100 }}
           animate={{ opacity: 1, x: 0 }}
