@@ -429,7 +429,7 @@ const services = [
         {services.map((service, index) => (
           <div
             key={index}
-            className="relative w-[21rem] h-auto overflow-hidden"
+            className="relative w-[20rem] h-auto overflow-hidden"
           >
             <img
               src={service.image}
