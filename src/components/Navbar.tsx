@@ -14,17 +14,19 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const navItems = [
-    { name: "HOME", path: "#hero" },
-    { name: "ABOUT", path: "#about" },
-    { name: "SERVICES", path: "#services" },
-    { name: "LOCATIONS", path: "#locations" },
-    { name: "CLIENTS", path: "#clients" },
-    { name: "ETHICS", path: "#ethics" },
-    { name: "MANAGEMENT", path: "#management" },
-    { name: "NEWS", path: "#news" },
-    { name: "CONTACT", path: "#contact" },
-  ];
+  
+const navItems = [
+  { name: "HOME", path: "/" },
+  { name: "ABOUT", path: "/#about" },
+  { name: "SERVICES", path: "/#services" },
+  { name: "LOCATIONS", path: "/#locations" },
+  { name: "CLIENTS", path: "/#clients" },
+  { name: "ETHICS", path: "/#ethics" },
+  { name: "MANAGEMENT", path: "/#management" },
+  { name: "BLOGS", path: "/blogs" },
+  { name: "CONTACT", path: "/#contact" },
+];
+
 
   return (
     <header
@@ -36,7 +38,7 @@ const Navbar = () => {
         <div className="flex items-center h-28">
           {/* Logo */}
           <div className="flex items-center flex-shrink-0">
-            <a href="#hero" className="text-xl font-bold text-gray-900">
+            <a href="/hero" className="text-xl font-bold text-gray-900">
               <div className="flex items-center">
                 <img src="/icepeak-logo.png" alt="Company Logo" className="h-32 w-52" />
               </div>

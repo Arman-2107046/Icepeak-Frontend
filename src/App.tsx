@@ -9,6 +9,8 @@ import TermsOfService from "./pages/TermsOfService";
 import SplashScreen from "./components/SplashScreen"; // 👈 import your splash
 import ScrollToTop from "./components/ScrollToTop";
 import CookieConsent from "./components/Cookies";
+import BlogList from "./pages/BlogList";
+import BlogDetails from "./pages/BlogDetails";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -35,6 +37,10 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />
           <Route path="/service" element={<TermsOfService />} />
+
+          {/* blog */}
+           <Route path="/blogs" element={<BlogList />} />
+        <Route path="/blogs/:slug" element={<BlogDetails />} />
         </Route>
       </Routes>
     </Router>

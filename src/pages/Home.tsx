@@ -1,3 +1,4 @@
+import ContactForm from "../components/ContactForm";
 import AboutSection from "../components/HomeComponents/AboutSection";
 import Clients from "../components/HomeComponents/Clients";
 import Ethics from "../components/HomeComponents/Ethics";
@@ -11,7 +12,7 @@ const Home = () => {
   return (
     <div className="scroll-smooth">
       {/* Hero Section  */}
-      <section >
+      <section>
         <HeroSection />
       </section>
 
@@ -19,7 +20,6 @@ const Home = () => {
       <section id="about">
         <AboutSection />
       </section>
-
 
       <section id="services">
         <Services />
@@ -41,15 +41,11 @@ const Home = () => {
         <Management />
       </section>
 
-      <section id="news">
-
-      </section>
+      <section id="news"></section>
 
       <section id="contact">
-
+        <ContactForm />
       </section>
-
-
     </div>
   );
 };
