@@ -1,6 +1,6 @@
 const Ethics = () => {
   return (
-    <div className="mt-[8rem]">
+    <div className="pt-[8rem]">
       <div className="flex justify-center mt-6 mb-10">
         <div className="inline-block px-6 py-3 font-serif text-4xl font-bold tracking-wider uppercase text-stone-800">
           Ethics & Sustainability
@@ -91,12 +91,11 @@ const Ethics = () => {
                     whole.
                   </p>
                 </div>
-<div className="self-start mt-8">
-  <button className="px-8 py-3 text-sm tracking-widest text-white lowercase transition bg-stone-700 hover:bg-stone-600">
-    read more
-  </button>
-</div>
-
+                <div className="self-start mt-8">
+                  <button className="px-8 py-3 text-sm tracking-widest text-white lowercase transition bg-stone-700 hover:bg-stone-600">
+                    read more
+                  </button>
+                </div>
               </div>
             </div>
           </div>

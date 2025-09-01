@@ -420,9 +420,9 @@ const services = [
 ];
 
   return (
-    <div className="flex flex-col items-center mt-16">
+    <div className="flex flex-col items-center pt-[8rem]">
       {/* Heading */}
-      <h1 className="mb-12 font-serif text-5xl font-extrabold text-center uppercase text-stone-700">
+      <h1 className="mb-12 font-serif text-4xl font-extrabold text-center uppercase text-stone-700">
         The Signature of Refined Fashion
       </h1>
       <div className="grid grid-cols-4 gap-4">

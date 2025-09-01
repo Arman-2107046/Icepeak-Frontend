@@ -3,42 +3,50 @@ import Clients from "../components/HomeComponents/Clients";
 import Ethics from "../components/HomeComponents/Ethics";
 import HeroSection from "../components/HomeComponents/HeroSection";
 import Locations from "../components/HomeComponents/Locations";
+import Management from "../components/HomeComponents/Management";
 import Services from "../components/HomeComponents/Services";
 // import OurNumberComponents from "../components/HomeComponents/OurNumberComponents";
 
 const Home = () => {
   return (
-    <div>
+    <div className="scroll-smooth">
       {/* Hero Section  */}
-      <section>
+      <section >
         <HeroSection />
       </section>
 
       {/* about section  */}
-      <section>
+      <section id="about">
         <AboutSection />
       </section>
 
-      {/* Our number section  */}
-      {/* 
-      <section>
-        <OurNumberComponents />
-      </section> */}
 
-      <section>
+      <section id="services">
         <Services />
       </section>
 
-      <section>
+      <section id="locations">
         <Locations />
       </section>
 
-      <section>
-        <Clients/>
+      <section id="clients">
+        <Clients />
       </section>
-      
-      <section>
-        <Ethics/>
+
+      <section id="ethics">
+        <Ethics />
+      </section>
+
+      <section id="management">
+        <Management />
+      </section>
+
+      <section id="news">
+
+      </section>
+
+      <section id="contact">
+
       </section>
 
 

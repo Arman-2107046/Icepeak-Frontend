@@ -15,7 +15,7 @@ const clientsData = [
 
 const Clients = () => {
   return (
-    <section className=" bg-gray-100 mt-[8rem] py-[8rem]">
+    <section className=" bg-gray-100 py-[8rem] mt-[8rem]">
       <div className="max-w-6xl px-4 mx-auto sm:px-6 lg:px-8">
         <h1 className="mb-8 font-serif text-3xl font-bold text-center uppercase text-stone-800">
           Our Clients & Valued Partners in Global Fashion

@@ -7,7 +7,7 @@ const AboutSection = () => {
   const isInView = useInView(ref);
 
   return (
-    <>
+    <div className="pt-[4rem]">
       <div className="flex items-center justify-center py-16 bg-white">
         <div className="max-w-6xl px-10 font-light">
           <h2 className="mb-6 font-serif text-4xl font-light text-stone-800">About Us</h2>
@@ -69,7 +69,7 @@ const AboutSection = () => {
       </div>
 
       <OurNumberComponents/>
-    </>
+    </div>
   );
 };
 
