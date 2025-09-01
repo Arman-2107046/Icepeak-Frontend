@@ -1,6 +1,7 @@
-import ContactForm from "../components/ContactForm";
+// import ContactForm from "../components/ContactForm";
 import AboutSection from "../components/HomeComponents/AboutSection";
 import Clients from "../components/HomeComponents/Clients";
+import ContactSection from "../components/HomeComponents/ContactSection";
 import Ethics from "../components/HomeComponents/Ethics";
 import HeroSection from "../components/HomeComponents/HeroSection";
 import Locations from "../components/HomeComponents/Locations";
@@ -44,7 +45,7 @@ const Home = () => {
       <section id="news"></section>
 
       <section id="contact">
-        <ContactForm />
+        <ContactSection/>
       </section>
     </div>
   );

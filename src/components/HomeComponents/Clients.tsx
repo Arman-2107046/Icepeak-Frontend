@@ -20,6 +20,8 @@ const Clients = () => {
         <h1 className="mb-8 font-serif text-3xl font-bold text-center uppercase text-stone-800">
           Our Clients & Valued Partners in Global Fashion
         </h1>
+                  <div className="w-24 h-1 mx-auto mb-6 bg-gradient-to-r from-amber-500 to-amber-700"></div>
+
         <div className="grid grid-cols-3 gap-4 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6">
           {clientsData.map((client) => (
             <a

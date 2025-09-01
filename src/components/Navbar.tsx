@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu } from "lucide-react";
-import LanguageSwitcher from "./LanguageSwitcher";
+// import LanguageSwitcher from "./LanguageSwitcher";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -38,7 +38,7 @@ const navItems = [
         <div className="flex items-center h-28">
           {/* Logo */}
           <div className="flex items-center flex-shrink-0">
-            <a href="/hero" className="text-xl font-bold text-gray-900">
+            <a href="/" className="text-xl font-bold text-gray-900">
               <div className="flex items-center">
                 <img src="/icepeak-logo.png" alt="Company Logo" className="h-32 w-52" />
               </div>
@@ -72,9 +72,9 @@ const navItems = [
               ))}
             </nav>
 
-            <div className="mx-4">
+            {/* <div className="mx-4">
               <LanguageSwitcher />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

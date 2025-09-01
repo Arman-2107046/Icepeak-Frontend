@@ -10,7 +10,13 @@ const AboutSection = () => {
     <div className="pt-[4rem]">
       <div className="flex items-center justify-center py-16 bg-white">
         <div className="max-w-6xl px-10 font-light">
-          <h2 className="mb-6 font-serif text-4xl font-light text-stone-800">About Us</h2>
+          <div className="flex justify-center mt-6 mb-10">
+            <div className="inline-block px-6 py-3 font-serif text-4xl font-bold tracking-wider uppercase text-stone-800">
+              about us
+            </div>
+          </div>
+          <div className="w-24 h-1 mx-auto mb-6 bg-gradient-to-r from-amber-500 to-amber-700"></div>
+
           <p className="mb-4 text-lg leading-relaxed text-gray-700">
             <span className="font-semibold">ICE PEAK DESIGN LTD.</span> is a
             leading apparel sourcing hub in Bangladesh, serving global fashion
@@ -29,7 +35,7 @@ const AboutSection = () => {
           </p>
         </div>
       </div>
-           
+
       <div ref={ref} className="flex items-center justify-center bg-white">
         {/* Left Div */}
         <motion.div
@@ -44,7 +50,7 @@ const AboutSection = () => {
             className="w-[24rem] h-[30rem]"
           />
         </motion.div>
-         
+
         {/* Right Div */}
         <motion.div
           initial={{ x: "100vw" }}
@@ -60,7 +66,7 @@ const AboutSection = () => {
             <div className="px-4 text-5xl text-center font-extralight font-dmserif">
               Empowering Your Business with Trusted Sourcing
             </div>
-             
+
             <button className="px-8 py-3 mt-8 text-sm tracking-widest text-white lowercase transition bg-stone-950 hover:bg-stone-700">
               read more
             </button>
@@ -68,7 +74,7 @@ const AboutSection = () => {
         </motion.div>
       </div>
 
-      <OurNumberComponents/>
+      <OurNumberComponents />
     </div>
   );
 };

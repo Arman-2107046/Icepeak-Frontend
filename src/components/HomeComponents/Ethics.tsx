@@ -5,14 +5,18 @@ const Ethics = () => {
         <div className="inline-block px-6 py-3 font-serif text-4xl font-bold tracking-wider uppercase text-stone-800">
           Ethics & Sustainability
         </div>
+        
       </div>
+          <div className="w-24 h-1 mx-auto mb-6 bg-gradient-to-r from-amber-500 to-amber-700"></div>
 
       <div className="flex w-full bg-white">
         {/* Left Column */}
         <div className="relative flex flex-col items-center justify-start px-6 max-w-[50rem]">
           <div className="absolute left-0 text-4xl tracking-widest text-gray-400 rotate-90 -translate-y-1/2 top-1/2">
             ethics
+            
           </div>
+          
 
           {/* Big S as Background Image */}
           <div

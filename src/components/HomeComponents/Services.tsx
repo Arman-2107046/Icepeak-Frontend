@@ -425,6 +425,8 @@ const services = [
       <h1 className="mb-12 font-serif text-4xl font-extrabold text-center uppercase text-stone-700">
         The Signature of Refined Fashion
       </h1>
+                <div className="w-24 h-1 mx-auto mb-6 bg-gradient-to-r from-amber-500 to-amber-700"></div>
+
       <div className="grid grid-cols-4 gap-4">
         {services.map((service, index) => (
           <div
