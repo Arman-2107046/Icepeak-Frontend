@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { Globe, Leaf, Star, Users } from "lucide-react"; // Optional icons for values
 
