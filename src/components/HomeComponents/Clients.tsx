@@ -65,7 +65,7 @@ const clientsData = [
 
 const Clients = () => {
   return (
-    <section className="py-20 bg-gray-100 sm:py-24">
+    <section className="py-20 bg-gray-100 sm:py-24 mt-[4rem]">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         {/* Heading */}
         <h1 className="mb-4 font-serif text-2xl font-bold text-center uppercase sm:text-3xl lg:text-4xl text-stone-800">
