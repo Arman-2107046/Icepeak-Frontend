@@ -81,15 +81,15 @@ const navItems = [
 
       {/* Mobile Menu Overlay */}
       <div
-        className={`fixed inset-0 bg-white z-40 transform transition-transform duration-300 ${
+        className={`fixed inset-0 bg-white z-40 transform transition-transform duration-300 opacity-100 ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
         <div className="flex flex-col h-full p-6">
           {/* Mobile Logo and Close */}
           <div className="flex items-center justify-between mb-6">
-            <a href="#hero" className="text-xl font-bold text-gray-900" onClick={() => setIsOpen(false)}>
-              <img src="/logo.webp" alt="Icepeak Design" className="w-12 h-12" />
+            <a href="/" className="text-xl font-bold text-gray-900" onClick={() => setIsOpen(false)}>
+              <img src="/icepeak-logo.png" alt="Icepeak Design" className="h-[5rem] w-[8rem]" />
             </a>
             <button
               onClick={() => setIsOpen(false)}
@@ -101,7 +101,7 @@ const navItems = [
           </div>
 
           {/* Mobile Navigation Links */}
-          <ul className="flex flex-col space-y-4">
+          <ul className="flex flex-col px-6 space-y-4">
             {navItems.map((item) => (
               <li key={item.name}>
                 <a
@@ -124,8 +124,8 @@ const navItems = [
               <a href="#" aria-label="Twitter"><i className="fab fa-twitter"></i></a>
             </div>
             <div className="text-sm text-gray-600">
-              <p>Email</p>
-              <p>Number</p>
+              <p>Email: mizan@icepeakbd.com</p>
+              <p>Number: +880 1678 705061</p>
             </div>
           </div>
         </div>

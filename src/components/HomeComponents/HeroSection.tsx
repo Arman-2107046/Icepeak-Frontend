@@ -15,7 +15,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, x: -100 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.2, ease: "easeOut" }}
-          className="relative z-20 pt-[15rem] flex justify-center text-white max-w-2xl h-full px-5 bg-[rgba(156,163,175,0.5)] ml-20 rounded-2xl shadow-lg"
+          className="relative z-20 pt-[15rem] flex justify-center text-white max-w-2xl h-full px-5 bg-[rgba(156,163,175,0.5)] ml-0 sm:ml-20 rounded-2xl shadow-lg"
         >
           <div>
             <motion.hr
