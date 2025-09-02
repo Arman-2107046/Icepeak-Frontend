@@ -5,7 +5,9 @@ import OurNumberComponents from "./OurNumberComponents";
 const AboutSection = () => {
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref);
+ 
 
+  
   return (
     <div className="pt-[4rem]">
       <div className="flex items-center justify-center py-16 bg-white">
