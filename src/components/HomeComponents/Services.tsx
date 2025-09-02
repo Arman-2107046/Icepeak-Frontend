@@ -255,7 +255,7 @@ const Services = () => {
   };
 
   return (
-    <div className="flex flex-col items-center px-4 pt-16 sm:pt-20 lg:pt-24 sm:px-6 lg:px-10">
+    <div className="flex flex-col items-center px-4 pt-[8rem]  sm:pt-20 lg:pt-[12rem] sm:px-6 lg:px-10">
       {/* Heading */}
       <h1 className="mb-4 font-serif text-2xl font-extrabold text-center uppercase sm:text-3xl lg:text-4xl text-stone-700">
         The Signature of Refined Fashion

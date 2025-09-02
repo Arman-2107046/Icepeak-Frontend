@@ -221,7 +221,7 @@ const teamMembers = [
 
 const Management = () => {
   return (
-    <div className="px-6 pt-16 mt-0 sm:px-8 lg:px-24 xl:px-32 2xl:px-48">
+    <div className="px-6 pt-[10rem] md:pt-[12rem] mt-0 sm:px-8 lg:px-24 xl:px-32 2xl:px-48">
       {/* Section Header */}
       <div className="mb-20 text-center">
         <h1 className="mb-12 font-serif text-3xl font-bold uppercase sm:text-4xl lg:text-4xl text-stone-800">

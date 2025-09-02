@@ -1,6 +1,6 @@
 const Locations = () => {
   return (
-    <section className="flex flex-col px-4 pt-16 lg:flex-row lg:pt-32 sm:px-6 lg:px-12">
+    <section className="flex flex-col px-4 pt-[8rem] lg:flex-row lg:pt-32 sm:px-6 lg:px-12">
       {/* Left Content */}
       <div className="lg:flex-1 lg:pr-10">
         <div className="grid grid-cols-1 gap-6 text-stone-900">

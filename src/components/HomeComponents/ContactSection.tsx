@@ -98,7 +98,7 @@ import ContactForm from "../ContactForm";
 
 const ContactSection = () => {
   return (
-    <div className="pt-16 sm:pt-20">
+    <div className="pt-[6rem] sm:pt-20">
       {/* Contact Section */}
       <section className="px-6 py-16 sm:px-8 lg:px-24 sm:py-24" aria-labelledby="contact-heading">
         <h1 className="mb-8 font-serif text-3xl font-bold text-center uppercase sm:mb-12 sm:text-4xl text-stone-800">
