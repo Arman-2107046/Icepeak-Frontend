@@ -94,7 +94,7 @@ const ContactSection = () => {
                 <FaWhatsapp className="mt-1 text-gray-600" size={24} />
                 <div>
                   <p className="text-sm text-gray-500">WhatsApp</p>
-                  <p className="text-base font-medium text-gray-800 sm:text-lg">
+                  <p className="text-base font-medium text-blue-600 sm:text-lg">
                     <a
                       href="https://wa.me/8801678705061"
                       target="_blank"
