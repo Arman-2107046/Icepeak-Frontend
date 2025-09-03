@@ -104,8 +104,6 @@
 
 // export default OurNumberComponents;
 
-
-
 const OurNumberComponents = () => {
   return (
     <div>
@@ -124,7 +122,9 @@ const OurNumberComponents = () => {
               {/* Card 1 - Key Offices */}
               <div className="flex items-center justify-center p-2 sm:p-3 bg-[#968476] border border-white h-32 sm:h-40 lg:h-56 w-full sm:w-32 lg:w-40 text-white">
                 <div className="box-border flex flex-col items-center justify-center w-full h-full p-2 border border-white sm:p-3 lg:p-4">
-                  <span className="text-2xl font-bold sm:text-3xl lg:text-4xl">15</span>
+                  <span className="text-2xl font-bold sm:text-3xl lg:text-4xl">
+                    2
+                  </span>
                   <span className="mt-1 text-xs leading-tight text-center sm:mt-2 sm:text-sm">
                     Key Offices Worldwide
                   </span>
@@ -134,7 +134,9 @@ const OurNumberComponents = () => {
               {/* Card 2 - Years in Business */}
               <div className="flex items-center justify-center p-2 sm:p-3 bg-[#5e2500] border border-white h-32 sm:h-40 lg:h-56 w-full sm:w-32 lg:w-40">
                 <div className="box-border flex flex-col items-center justify-center w-full h-full p-2 border border-white sm:p-3">
-                  <span className="text-2xl font-bold sm:text-3xl lg:text-4xl">35</span>
+                  <span className="text-2xl font-bold sm:text-3xl lg:text-4xl">
+                    10
+                  </span>
                   <span className="mt-1 text-xs leading-tight text-center sm:mt-2 sm:text-sm">
                     Years In Business
                   </span>
@@ -144,7 +146,9 @@ const OurNumberComponents = () => {
               {/* Card 3 - Countries */}
               <div className="flex items-center justify-center w-full h-32 p-2 bg-gray-500 border border-white sm:p-3 sm:h-40 lg:h-56 sm:w-32 lg:w-40">
                 <div className="box-border flex flex-col items-center justify-center w-full h-full p-2 border border-white sm:p-3">
-                  <span className="text-2xl font-bold sm:text-3xl lg:text-4xl">10</span>
+                  <span className="text-2xl font-bold sm:text-3xl lg:text-4xl">
+                    10
+                  </span>
                   <span className="mt-1 text-xs leading-tight text-center sm:mt-2 sm:text-sm">
                     Countries Worldwide
                   </span>
@@ -154,7 +158,9 @@ const OurNumberComponents = () => {
               {/* Card 4 - Staff */}
               <div className="flex items-center justify-center w-full h-32 p-2 bg-gray-700 border border-white sm:p-3 sm:h-40 lg:h-56 sm:w-32 lg:w-40">
                 <div className="box-border flex flex-col items-center justify-center w-full h-full p-2 border border-white sm:p-3">
-                  <span className="text-2xl font-bold sm:text-3xl lg:text-4xl">500+</span>
+                  <span className="text-2xl font-bold sm:text-3xl lg:text-4xl">
+                    50+
+                  </span>
                   <span className="mt-1 text-xs leading-tight text-center sm:mt-2 sm:text-sm">
                     Staff Worldwide
                   </span>
@@ -164,7 +170,9 @@ const OurNumberComponents = () => {
               {/* Card 5 - Customers */}
               <div className="flex items-center justify-center p-2 sm:p-3 bg-[#5a5755] border border-white h-32 sm:h-40 lg:h-56 w-full sm:w-32 lg:w-40">
                 <div className="box-border flex flex-col items-center justify-center w-full h-full p-2 border border-white sm:p-3">
-                  <span className="text-2xl font-bold sm:text-3xl lg:text-4xl">50+</span>
+                  <span className="text-2xl font-bold sm:text-3xl lg:text-4xl">
+                    15+
+                  </span>
                   <span className="mt-1 text-xs leading-tight text-center sm:mt-2 sm:text-sm">
                     Global Customers
                   </span>
@@ -176,11 +184,11 @@ const OurNumberComponents = () => {
           {/* Right Section - Image and Text */}
           <div className="flex flex-col items-start mt-8 lg:flex-row lg:mt-0">
             {/* Image */}
-<div className="w-full mb-6 lg:w-auto lg:-mr-10 lg:mb-0 xl:-mr-12">
-  <img
-    src="/dummy.jpg"
-    alt="Fashion business meeting"
-    className="
+            <div className="w-full mb-6 lg:w-auto lg:-mr-10 lg:mb-0 xl:-mr-12">
+              <img
+                src="/dummy.jpg"
+                alt="Fashion business meeting"
+                className="
       object-cover lg:object-contain
       w-64 h-48      /* small screens: narrower & shorter */
       sm:w-80 sm:h-64 /* small-medium screens */
@@ -190,9 +198,8 @@ const OurNumberComponents = () => {
       rounded-md 
       mx-auto lg:mx-0
     "
-  />
-</div>
-
+              />
+            </div>
 
             {/* Text Content */}
             <div className="w-full lg:max-w-[18rem] px-4 lg:px-0">

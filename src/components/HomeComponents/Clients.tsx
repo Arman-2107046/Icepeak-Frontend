@@ -1,18 +1,18 @@
 
 
 const clientsData = [
-  { name: "Client 1", logo: "/clientImages/client1.png", url: "https://client1.com" },
-  { name: "Client 2", logo: "/clientImages/client2.png", url: "https://client2.com" },
-  { name: "Client 3", logo: "/clientImages/client3.png", url: "https://client3.com" },
-  { name: "Client 4", logo: "/clientImages/client4.png", url: "https://client4.com" },
-  { name: "Client 5", logo: "/clientImages/client5.png", url: "https://client5.com" },
-  { name: "Client 6", logo: "/clientImages/client6.png", url: "https://client6.com" },
-  { name: "Client 7", logo: "/clientImages/client7.png", url: "https://client7.com" },
-  { name: "Client 8", logo: "/clientImages/client8.png", url: "https://client8.com" },
-  { name: "Client 9", logo: "/clientImages/client9.png", url: "https://client9.com" },
-  { name: "Client 10", logo: "/clientImages/client10.png", url: "https://client10.com" },
-  { name: "Client 11", logo: "/clientImages/client11.png", url: "https://client11.com" },
-  { name: "Client 12", logo: "/clientImages/client12.png", url: "https://client12.com" },
+  { name: "Client 1", logo: "/clientImages/1.png", url: "https://client1.com" },
+  { name: "Client 2", logo: "/clientImages/2.png", url: "https://client2.com" },
+  { name: "Client 3", logo: "/clientImages/3.png", url: "https://client3.com" },
+  { name: "Client 4", logo: "/clientImages/4.png", url: "https://client4.com" },
+  { name: "Client 5", logo: "/clientImages/5.png", url: "https://client5.com" },
+  { name: "Client 6", logo: "/clientImages/6.png", url: "https://client6.com" },
+  { name: "Client 7", logo: "/clientImages/7.png", url: "https://client7.com" },
+  { name: "Client 8", logo: "/clientImages/8.png", url: "https://client8.com" },
+  { name: "Client 9", logo: "/clientImages/9.png", url: "https://client9.com" },
+  { name: "Client 10", logo: "/clientImages/10.png", url: "https://client10.com" },
+  { name: "Client 11", logo: "/clientImages/11.png", url: "https://client11.com" },
+  { name: "Client 12", logo: "/clientImages/12.png", url: "https://client12.com" },
 ];
 
 const Clients = () => {
@@ -33,7 +33,8 @@ const Clients = () => {
               href={client.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center p-4 transition-transform duration-300 bg-white rounded-lg shadow-sm hover:scale-105"
+              // className="flex items-center justify-center p-4 transition-transform duration-300 bg-white rounded-lg shadow-sm hover:scale-105"
+              className="flex items-center justify-center p-1 transition-transform duration-300 hover:scale-105"
             >
               <img
                 src={client.logo}

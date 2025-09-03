@@ -146,7 +146,7 @@ const ContactSection = () => {
                   <p className="text-sm text-gray-500">Phone</p>
                   <p className="text-base font-medium text-gray-800 sm:text-lg">
                     +880 1678 705061
-                  </p>
+                  </p>npm
                 </div>
               </div>
 
