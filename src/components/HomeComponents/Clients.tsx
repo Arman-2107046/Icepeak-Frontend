@@ -1,18 +1,18 @@
 
 
 const clientsData = [
-  { name: "Client 1", logo: "/clientImages/1.png", url: "https://client1.com" },
-  { name: "Client 2", logo: "/clientImages/2.png", url: "https://client2.com" },
-  { name: "Client 3", logo: "/clientImages/3.png", url: "https://client3.com" },
-  { name: "Client 4", logo: "/clientImages/4.png", url: "https://client4.com" },
-  { name: "Client 5", logo: "/clientImages/5.png", url: "https://client5.com" },
+  { name: "Client 1", logo: "/clientImages/1.png", url: "" },
+  { name: "Client 2", logo: "/clientImages/2.png", url: "" },
+  { name: "Client 3", logo: "/clientImages/3.png", url: "" },
+  { name: "Client 4", logo: "/clientImages/4.png", url: "" },
+  { name: "Client 5", logo: "/clientImages/5.png", url: "" },
   // { name: "Client 6", logo: "/clientImages/6.png", url: "https://client6.com" },
-  { name: "Client 7", logo: "/clientImages/7.png", url: "https://client7.com" },
-  { name: "Client 8", logo: "/clientImages/8.png", url: "https://client8.com" },
-  { name: "Client 9", logo: "/clientImages/9.png", url: "https://client9.com" },
-  { name: "Client 10", logo: "/clientImages/10.png", url: "https://client10.com" },
-  { name: "Client 11", logo: "/clientImages/11.png", url: "https://client11.com" },
-  { name: "Client 12", logo: "/clientImages/12.png", url: "https://client12.com" },
+  { name: "Client 7", logo: "/clientImages/7.png", url: "" },
+  { name: "Client 8", logo: "/clientImages/8.png", url: "" },
+  { name: "Client 9", logo: "/clientImages/9.png", url: "" },
+  { name: "Client 10", logo: "/clientImages/10.png", url: "" },
+  { name: "Client 11", logo: "/clientImages/11.png", url: "" },
+  { name: "Client 12", logo: "/clientImages/12.png", url: "" },
 ];
 
 const Clients = () => {
