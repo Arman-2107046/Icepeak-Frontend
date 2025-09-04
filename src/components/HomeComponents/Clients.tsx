@@ -6,7 +6,7 @@ const clientsData = [
   { name: "Client 3", logo: "/clientImages/3.png", url: "https://client3.com" },
   { name: "Client 4", logo: "/clientImages/4.png", url: "https://client4.com" },
   { name: "Client 5", logo: "/clientImages/5.png", url: "https://client5.com" },
-  { name: "Client 6", logo: "/clientImages/6.png", url: "https://client6.com" },
+  // { name: "Client 6", logo: "/clientImages/6.png", url: "https://client6.com" },
   { name: "Client 7", logo: "/clientImages/7.png", url: "https://client7.com" },
   { name: "Client 8", logo: "/clientImages/8.png", url: "https://client8.com" },
   { name: "Client 9", logo: "/clientImages/9.png", url: "https://client9.com" },
