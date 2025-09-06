@@ -11,6 +11,9 @@ import ScrollToTop from "./components/ScrollToTop";
 import CookieConsent from "./components/Cookies";
 import BlogList from "./pages/BlogList";
 import BlogDetails from "./pages/BlogDetails";
+import Knitwear from "./pages/ProductPages/Knitwear";
+
+
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -22,7 +25,7 @@ const App = () => {
   }, []);
 
   if (loading) {
-    return <SplashScreen />; // 👈 show splash first
+    return <SplashScreen />; 
   }
 
   return (
@@ -41,6 +44,10 @@ const App = () => {
           {/* blog */}
            <Route path="/blogs" element={<BlogList />} />
         <Route path="/blogs/:slug" element={<BlogDetails />} />
+
+        <Route path="/knitwear" element={<Knitwear />} />
+
+      
         </Route>
       </Routes>
     </Router>

@@ -65,7 +65,7 @@ const navItems = [
                 <a
                   key={item.name}
                   href={item.path}
-                  className="text-gray-700 hover:text-gray-800 transition-colors duration-200 text-base md:text-md lg:text-[1rem] whitespace-nowrap"
+                  className="text-gray-900 hover:text-gray-700 transition-colors duration-200 text-base md:text-md lg:text-[1rem] whitespace-nowrap"
                 >
                   {item.name}
                 </a>

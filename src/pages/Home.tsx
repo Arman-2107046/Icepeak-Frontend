@@ -6,6 +6,7 @@ import Ethics from "../components/HomeComponents/Ethics";
 import HeroSection from "../components/HomeComponents/HeroSection";
 import Locations from "../components/HomeComponents/Locations";
 import Management from "../components/HomeComponents/Management";
+import NewsAndMedia from "../components/HomeComponents/NewsAndMedia";
 import Services from "../components/HomeComponents/Services";
 // import OurNumberComponents from "../components/HomeComponents/OurNumberComponents";
 
@@ -34,6 +35,10 @@ const Home = () => {
         <Clients />
       </section>
 
+      <section>
+        <NewsAndMedia/>
+      </section>
+
       <section id="ethics">
         <Ethics />
       </section>
@@ -47,6 +52,9 @@ const Home = () => {
       <section id="contact">
         <ContactSection/>
       </section>
+
+
+      
     </div>
   );
 };
