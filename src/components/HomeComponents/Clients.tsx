@@ -1,21 +1,34 @@
+import { useState, useEffect } from "react";
 
-
-const clientsData = [
-  { name: "Client 1", logo: "/clientImages/1.png", url: "" },
-  { name: "Client 2", logo: "/clientImages/2.png", url: "" },
-  { name: "Client 3", logo: "/clientImages/3.png", url: "" },
-  { name: "Client 4", logo: "/clientImages/4.png", url: "" },
-  { name: "Client 5", logo: "/clientImages/5.png", url: "" },
-  // { name: "Client 6", logo: "/clientImages/6.png", url: "https://client6.com" },
-  { name: "Client 7", logo: "/clientImages/7.png", url: "" },
-  { name: "Client 8", logo: "/clientImages/8.png", url: "" },
-  { name: "Client 9", logo: "/clientImages/9.png", url: "" },
-  { name: "Client 10", logo: "/clientImages/10.png", url: "" },
-  { name: "Client 11", logo: "/clientImages/11.png", url: "" },
-  { name: "Client 12", logo: "/clientImages/12.png", url: "" },
-];
+interface Client {
+  link: string;
+  image: string;
+}
 
 const Clients = () => {
+  const [clients, setClients] = useState<Client[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchClients = async () => {
+      try {
+        const res = await fetch(`${import.meta.env.VITE_API_URL}/clients`);
+        const data = await res.json();
+        if (data.status === "success") {
+          setClients(data.data);
+        }
+      } catch (err) {
+        console.error("Failed to fetch clients:", err);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchClients();
+  }, []);
+
+  if (loading) return <p className="mt-20 text-center">Loading clients...</p>;
+
   return (
     <section className="py-20 bg-gray-100 sm:py-24 mt-[4rem] pt-[8rem] md:pt-[12rem]">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
@@ -27,18 +40,17 @@ const Clients = () => {
 
         {/* Clients Grid */}
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-6">
-          {clientsData.map((client) => (
+          {clients.map((client, index) => (
             <a
-              key={client.name}
-              href={client.url}
+              key={index}
+              href={client.link}
               target="_blank"
               rel="noopener noreferrer"
-              // className="flex items-center justify-center p-4 transition-transform duration-300 bg-white rounded-lg shadow-sm hover:scale-105"
               className="flex items-center justify-center p-1 transition-transform duration-300 hover:scale-105"
             >
               <img
-                src={client.logo}
-                alt={client.name}
+                src={client.image}
+                alt={`Client ${index + 1}`}
                 className="object-contain w-full max-h-20 sm:max-h-24 md:max-h-28 lg:max-h-24 xl:max-h-28"
               />
             </a>

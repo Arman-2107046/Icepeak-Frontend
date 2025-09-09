@@ -17,7 +17,7 @@ const NewsAndMedia = () => {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const res = await fetch("http://127.0.0.1:8000/api/news");
+const res = await fetch(`${import.meta.env.VITE_API_URL}/news`);
         const data = await res.json();
         const featuredBlogs = data.data.filter((b: Blog) => b.is_featured === 1);
         setBlogs(featuredBlogs);
@@ -57,8 +57,8 @@ const NewsAndMedia = () => {
               className="flex flex-col overflow-hidden bg-white rounded shadow"
             >
               <img
-                src={`http://127.0.0.1:8000/storage/${blog.featured_image}`}
-                alt={blog.title}
+ src={`${import.meta.env.VITE_API_URL.replace('/api', '')}/storage/${blog.featured_image}`}
+  alt={blog.title}
                 className="object-cover w-full h-48"
               />
               <div className="flex flex-col flex-1 p-4">

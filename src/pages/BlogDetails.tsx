@@ -33,7 +33,7 @@ export default function BlogDetails() {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const res = await fetch("http://127.0.0.1:8000/api/news");
+const res = await fetch(`${import.meta.env.VITE_API_URL}/news`);
         const data = await res.json();
         if (data.status === "success") {
           setBlogs(data.data);
@@ -57,31 +57,33 @@ export default function BlogDetails() {
   const recentBlogs = blogs
     .filter((b) => b.type === "publish" && b.id !== blog.id)
     .slice(0, 3);
-  const featuredImageUrl = `http://127.0.0.1:8000/storage/${blog.featured_image}`;
+const featuredImageUrl = `${import.meta.env.VITE_API_URL.replace('/api', '')}/storage/${blog.featured_image}`;
 
   return (
     <div>
       {/* Hero Section */}
-      <section
-        className="relative h-[70vh] mb-8"
-        style={{
-          backgroundImage: "url('/news-hero.jpg')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
-        <div className="absolute top-0 left-0 z-20 w-full h-24 pointer-events-none bg-gradient-to-b from-white/60 to-transparent" />
+<section
+  className="relative h-[70vh] mb-8"
+  style={{
+    backgroundImage: "url('/news-hero.jpg')",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+  }}
+>
+  <div className="absolute top-0 left-0 z-20 w-full h-24 pointer-events-none bg-gradient-to-b from-white/60 to-transparent" />
 
-        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-        <div className="relative z-10 flex flex-col justify-center h-full px-12 text-left">
-          <h1 className="max-w-3xl font-serif text-3xl font-semibold text-white drop-shadow-lg">
-            {blog.title}
-          </h1>
-          <p className="max-w-2xl mt-4 text-xl font-light text-white drop-shadow-md">
-            {blog.excerpt}
-          </p>
-        </div>
-      </section>
+  <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+
+  <div className="relative z-10 flex flex-col justify-center h-full px-4 text-left sm:px-6 lg:px-12">
+    <h1 className="max-w-3xl font-serif text-2xl font-semibold text-white sm:text-3xl lg:text-4xl drop-shadow-lg">
+      {blog.title}
+    </h1>
+    <p className="max-w-2xl mt-4 text-base font-light text-white sm:text-lg lg:text-xl drop-shadow-md">
+      {blog.excerpt}
+    </p>
+  </div>
+</section>
+
 
       <div className="flex flex-col justify-between max-w-6xl gap-8 px-8 mx-auto mt-12 lg:flex-row">
         {/* Left: Blog Content */}
@@ -226,7 +228,7 @@ export default function BlogDetails() {
                 className="flex items-center gap-3 mb-3 hover:underline"
               >
                 <img
-                  src={`http://127.0.0.1:8000/storage/${b.featured_image}`}
+src={`${import.meta.env.VITE_API_URL.replace('/api', '')}/storage/${b.featured_image}`}
                   alt={b.title}
                   className="object-cover w-12 h-12 rounded-sm"
                 />
