@@ -8,7 +8,7 @@ interface Product {
   image: string;
 }
 
-const Knitwear = () => {
+const Workwear = () => {
   const [products, setProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState(true);
 
@@ -17,11 +17,10 @@ const Knitwear = () => {
     fetch(`${apiUrl}/products`)
       .then((res) => res.json())
       .then((data: Product[]) => {
-        // Filter only knitwear products
-        const knitwearProducts = data.filter((product) =>
-          product.category.includes("knitwear")
+        const workwearProducts = data.filter((product) =>
+          product.category.includes("workwear")
         );
-        setProducts(knitwearProducts);
+        setProducts(workwearProducts);
         setLoading(false);
       })
       .catch((err) => {
@@ -36,7 +35,7 @@ const Knitwear = () => {
       <section
         className="relative h-[70vh] mb-12"
         style={{
-          backgroundImage: "url('/productImages/knit-hero.jpg')",
+          backgroundImage: "url('/productImages/workwear-hero.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -45,10 +44,11 @@ const Knitwear = () => {
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
         <div className="relative z-10 flex flex-col justify-center h-full px-12 text-left">
           <h1 className="max-w-3xl font-serif text-3xl font-semibold text-white drop-shadow-lg">
-            Explore Our Premium Knitwear Collection
+            Explore Our Premium Workwear Collection
           </h1>
           <p className="max-w-2xl mt-2 text-lg font-light text-white drop-shadow-md">
-            Stylish, comfortable, and versatile knitwear—perfect for every season.
+            Crafted for durability, comfort, and style—designed to empower
+            professionals in every industry.
           </p>
         </div>
       </section>
@@ -56,12 +56,12 @@ const Knitwear = () => {
       {/* Products Section */}
       <section className="px-6 mb-12 md:px-12 lg:px-24">
         <h2 className="mb-8 font-serif text-3xl font-bold text-gray-800">
-          Our Knitwear Products
+          Our Workwear Products
         </h2>
         {loading ? (
           <p className="text-gray-500">Loading products...</p>
         ) : products.length === 0 ? (
-          <p className="text-gray-500">No knitwear products available.</p>
+          <p className="text-gray-500">No workwear products available.</p>
         ) : (
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
             {products.map((product) => (
@@ -86,8 +86,8 @@ const Knitwear = () => {
                       product.gender.toLowerCase() !== "not-applicable" &&
                       ` - ${product.gender}`}
                   </h3>
-
                 </div>
+                {/* Optional overlay effect */}
                 <div className="absolute inset-0 transition-opacity duration-300 opacity-0 bg-gradient-to-t from-black/20 to-transparent group-hover:opacity-100"></div>
               </div>
             ))}
@@ -98,4 +98,4 @@ const Knitwear = () => {
   );
 };
 
-export default Knitwear;
+export default Workwear;

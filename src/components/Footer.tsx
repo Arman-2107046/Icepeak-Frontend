@@ -1,6 +1,5 @@
-
-
 import { Facebook, Linkedin, Youtube, Phone, Mail } from "lucide-react";
+import NewsletterForm from "./NewsletterForm";
 
 const Footer = () => {
   return (
@@ -20,7 +19,7 @@ const Footer = () => {
           </div>
 
           {/* Right side */}
-          <form className="flex flex-col flex-1 w-full max-w-md gap-4">
+          {/* <form className="flex flex-col flex-1 w-full max-w-md gap-4">
             <input
               type="email"
               placeholder="Enter your email"
@@ -34,7 +33,9 @@ const Footer = () => {
                 Subscribe
               </button>
             </div>
-          </form>
+          </form> */}
+
+          <NewsletterForm />
         </div>
       </section>
 
@@ -48,7 +49,8 @@ const Footer = () => {
             </h2>
             <p className="max-w-lg mt-4 text-sm sm:text-base text-stone-700">
               We connect you with reliable, low-cost suppliers. Our solutions
-              optimize your supply chain and create real value for your business.
+              optimize your supply chain and create real value for your
+              business.
             </p>
             <div className="flex flex-col gap-2 mt-6 text-sm sm:text-base text-stone-700">
               <div className="flex items-center justify-start gap-2 md:justify-start">
@@ -73,35 +75,96 @@ const Footer = () => {
             {/* Column 1: Company */}
             <div className="flex flex-col gap-2">
               <h3 className="font-serif uppercase text-stone-800">Company</h3>
-              <a href="/" className="text-stone-600 hover:text-stone-800">Home</a>
-              <a href="/#about" className="text-stone-600 hover:text-stone-800">About</a>
-              <a href="/#clients" className="text-stone-600 hover:text-stone-800">Our Clients</a>
-              <a href="/blogs" className="text-stone-600 hover:text-stone-800">Blogs</a>
-              <a href="#" className="text-stone-600 hover:text-stone-800">Contact</a>
-              <a href="#" className="text-stone-600 hover:text-stone-800">Showroom</a>
+              <a href="/" className="text-stone-600 hover:text-stone-800">
+                Home
+              </a>
+              <a href="/#about" className="text-stone-600 hover:text-stone-800">
+                About
+              </a>
+
+              <a
+                href="/#management"
+                className="text-stone-600 hover:text-stone-800"
+              >
+                Management
+              </a>
+
+              <a
+                href="/#clients"
+                className="text-stone-600 hover:text-stone-800"
+              >
+                Our Clients
+              </a>
+
+              <a
+                href="/#contact"
+                className="text-stone-600 hover:text-stone-800"
+              >
+                Contact
+              </a>
+              {/* <a href="#" className="text-stone-600 hover:text-stone-800">
+                Showroom
+              </a> */}
             </div>
 
             {/* Column 2: Quick Links */}
             <div className="flex flex-col gap-2">
-              <h3 className="font-serif uppercase text-stone-800">Quick Links</h3>
-              <a href="#" className="text-stone-600 hover:text-stone-800">Services</a>
-              <a href="#" className="text-stone-600 hover:text-stone-800">Ethics</a>
-              <a href="#" className="text-stone-600 hover:text-stone-800">Terms of Use</a>
-              <a href="#" className="text-stone-600 hover:text-stone-800">LinkedIn</a>
-              <a href="#" className="text-stone-600 hover:text-stone-800">Facebook</a>
-              <a href="#" className="text-stone-600 hover:text-stone-800">Youtube</a>
+              <h3 className="font-serif uppercase text-stone-800">
+                Quick Links
+              </h3>
+              <a
+                href="/service"
+                className="text-stone-600 hover:text-stone-800"
+              >
+                Services
+              </a>
+              <a href="#" className="text-stone-600 hover:text-stone-800">
+                Ethics
+              </a>
+
+              <a href="/blogs" className="text-stone-600 hover:text-stone-800">
+                Blogs
+              </a>
+
+              <a href="#" className="text-stone-600 hover:text-stone-800">
+                LinkedIn
+              </a>
+              <a href="#" className="text-stone-600 hover:text-stone-800">
+                Facebook
+              </a>
+              <a href="#" className="text-stone-600 hover:text-stone-800">
+                Youtube
+              </a>
             </div>
 
             {/* Column 3: Legal */}
             <div className="flex flex-col gap-2">
               <h3 className="font-serif uppercase text-stone-800">Legal</h3>
-              <a href="/privacy" className="text-stone-600 hover:text-stone-800">Privacy</a>
-              <a href="/service" className="text-stone-600 hover:text-stone-800">Terms Of Service</a>
-
-              <a href="#" className="text-stone-600 hover:text-stone-800">Email</a>
-              <a href="#" className="text-stone-600 hover:text-stone-800">Usage</a>
-              <a href="#" className="text-stone-600 hover:text-stone-800">LinkedIn Policies</a>
-              <a href="#" className="text-stone-600 hover:text-stone-800">Copyright</a>
+              <a
+                href="/privacy"
+                className="text-stone-600 hover:text-stone-800"
+              >
+                Privacy Policy
+              </a>
+              <a
+                href="/service"
+                className="text-stone-600 hover:text-stone-800"
+              >
+                Terms Of Service
+              </a>
+              {/* 
+              <a href="#" className="text-stone-600 hover:text-stone-800">
+                Email
+              </a> */}
+              {/* <a href="#" className="text-stone-600 hover:text-stone-800">
+                Usage
+              </a> */}
+              {/* <a href="#" className="text-stone-600 hover:text-stone-800">
+                LinkedIn Policies
+              </a> */}
+              {/* <a href="#" className="text-stone-600 hover:text-stone-800">
+                Copyright
+              </a> */}
             </div>
           </div>
         </div>
@@ -109,7 +172,8 @@ const Footer = () => {
         {/* Copyright */}
         <div className="flex flex-col items-center justify-center gap-3 pt-6 pb-6 mt-12 text-center border-t border-stone-200">
           <p className="text-sm text-stone-500">
-            © {new Date().getFullYear()} Icepeak Design Limited. All rights reserved.
+            © {new Date().getFullYear()} Icepeak Design Limited. All rights
+            reserved.
           </p>
         </div>
       </section>

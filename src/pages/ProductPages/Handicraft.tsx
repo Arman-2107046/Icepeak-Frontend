@@ -8,7 +8,7 @@ interface Product {
   image: string;
 }
 
-const Knitwear = () => {
+const Handicraft = () => {
   const [products, setProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState(true);
 
@@ -17,11 +17,10 @@ const Knitwear = () => {
     fetch(`${apiUrl}/products`)
       .then((res) => res.json())
       .then((data: Product[]) => {
-        // Filter only knitwear products
-        const knitwearProducts = data.filter((product) =>
-          product.category.includes("knitwear")
+        const handicraftProducts = data.filter((product) =>
+          product.category.includes("handicraft")
         );
-        setProducts(knitwearProducts);
+        setProducts(handicraftProducts);
         setLoading(false);
       })
       .catch((err) => {
@@ -36,7 +35,7 @@ const Knitwear = () => {
       <section
         className="relative h-[70vh] mb-12"
         style={{
-          backgroundImage: "url('/productImages/knit-hero.jpg')",
+          backgroundImage: "url('/productImages/handi-hero.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -45,10 +44,11 @@ const Knitwear = () => {
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
         <div className="relative z-10 flex flex-col justify-center h-full px-12 text-left">
           <h1 className="max-w-3xl font-serif text-3xl font-semibold text-white drop-shadow-lg">
-            Explore Our Premium Knitwear Collection
+            Explore Our Premium Handicraft Collection
           </h1>
           <p className="max-w-2xl mt-2 text-lg font-light text-white drop-shadow-md">
-            Stylish, comfortable, and versatile knitwear—perfect for every season.
+            Authentic, handcrafted products that reflect culture, tradition, and
+            artistry.
           </p>
         </div>
       </section>
@@ -56,12 +56,12 @@ const Knitwear = () => {
       {/* Products Section */}
       <section className="px-6 mb-12 md:px-12 lg:px-24">
         <h2 className="mb-8 font-serif text-3xl font-bold text-gray-800">
-          Our Knitwear Products
+          Our Handicraft Products
         </h2>
         {loading ? (
           <p className="text-gray-500">Loading products...</p>
         ) : products.length === 0 ? (
-          <p className="text-gray-500">No knitwear products available.</p>
+          <p className="text-gray-500">No handicraft products available.</p>
         ) : (
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
             {products.map((product) => (
@@ -80,13 +80,12 @@ const Knitwear = () => {
                   />
                 </div>
                 <div className="p-5 bg-white">
-                <h3 className="text-lg font-semibold text-gray-800 transition-colors duration-300 group-hover:text-indigo-600">
+                  <h3 className="text-lg font-semibold text-gray-800 transition-colors duration-300 group-hover:text-indigo-600">
                     {product.name}
                     {product.gender &&
                       product.gender.toLowerCase() !== "not-applicable" &&
                       ` - ${product.gender}`}
                   </h3>
-
                 </div>
                 <div className="absolute inset-0 transition-opacity duration-300 opacity-0 bg-gradient-to-t from-black/20 to-transparent group-hover:opacity-100"></div>
               </div>
@@ -98,4 +97,4 @@ const Knitwear = () => {
   );
 };
 
-export default Knitwear;
+export default Handicraft;

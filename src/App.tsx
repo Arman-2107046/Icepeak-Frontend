@@ -12,8 +12,17 @@ import CookieConsent from "./components/Cookies";
 import BlogList from "./pages/BlogList";
 import BlogDetails from "./pages/BlogDetails";
 import Knitwear from "./pages/ProductPages/Knitwear";
-
-
+import Sweater from "./pages/ProductPages/Sweater";
+import WovenDenim from "./pages/ProductPages/WovenDenim";
+import WovenNonDenim from "./pages/ProductPages/WovenNonDenim";
+import WovenOuterwear from "./pages/ProductPages/WovenOuterwear";
+import Activewear from "./pages/ProductPages/Activewear";
+import Lingerie from "./pages/ProductPages/Lingerie";
+import Workwear from "./pages/ProductPages/Workwear";
+import Sleepwear from "./pages/ProductPages/Sleepwear";
+import LeatherItems from "./pages/ProductPages/LeatherItems";
+import Handicraft from "./pages/ProductPages/Handicraft";
+import HomeTextile from "./pages/ProductPages/HomeTextile";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -25,13 +34,13 @@ const App = () => {
   }, []);
 
   if (loading) {
-    return <SplashScreen />; 
+    return <SplashScreen />;
   }
 
   return (
     <Router>
-      <CookieConsent/>
-      <ScrollToTop/>
+      <CookieConsent />
+      <ScrollToTop />
       <Routes>
         {/* All pages wrapped by Layout */}
         <Route element={<Layout />}>
@@ -42,12 +51,22 @@ const App = () => {
           <Route path="/service" element={<TermsOfService />} />
 
           {/* blog */}
-           <Route path="/blogs" element={<BlogList />} />
-        <Route path="/blogs/:slug" element={<BlogDetails />} />
+          <Route path="/blogs" element={<BlogList />} />
+          <Route path="/blogs/:slug" element={<BlogDetails />} />
 
-        <Route path="/knitwear" element={<Knitwear />} />
-
-      
+          <Route path="/knitwear" element={<Knitwear />} />
+          <Route path="/sweater" element={<Sweater />} />
+          <Route path="/woven-denim" element={<WovenDenim />} />
+          <Route path="/woven-non-denim" element={<WovenNonDenim />} />
+          <Route path="/woven-outerwear" element={<WovenOuterwear />} />
+          <Route path="/activewear" element={<Activewear />} />
+          <Route path="/activewear" element={<Lingerie />} />
+          <Route path="/workwear" element={<Workwear />} />
+          <Route path="/sleepwear" element={<Sleepwear />} />
+          <Route path="/leather-items" element={<LeatherItems />} />
+          <Route path="/handicraft" element={<Handicraft />} />
+          <Route path="/home-textile" element={<HomeTextile />} />
+          <Route path="/lingerie" element={<Lingerie />} />
         </Route>
       </Routes>
     </Router>
