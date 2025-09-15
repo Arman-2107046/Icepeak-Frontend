@@ -54,7 +54,7 @@ const Management = () => {
         {teamMembers.map((member) => (
           <div
             key={member.id}
-            className="relative overflow-hidden rounded-md shadow-lg cursor-pointer group w-full sm:w-[18rem] lg:w-[15rem]"
+            className="relative overflow-hidden rounded-md shadow-lg cursor-pointer group w-full sm:w-[14rem] lg:w-[15rem]"
           >
             <img
               src={member.image}

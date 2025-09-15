@@ -17,9 +17,11 @@ const NewsAndMedia = () => {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-const res = await fetch(`${import.meta.env.VITE_API_URL}/news`);
+        const res = await fetch(`${import.meta.env.VITE_API_URL}/news`);
         const data = await res.json();
-        const featuredBlogs = data.data.filter((b: Blog) => b.is_featured === 1);
+        const featuredBlogs = data.data.filter(
+          (b: Blog) => b.is_featured === 1
+        );
         setBlogs(featuredBlogs);
       } catch (err) {
         console.error(err);
@@ -42,12 +44,11 @@ const res = await fetch(`${import.meta.env.VITE_API_URL}/news`);
   const visibleBlogs = blogs.slice(currentIndex, currentIndex + itemsPerPage);
 
   return (
-    <div className="max-w-6xl px-4 py-8 mx-auto pt-[4rem]">
-        
-        <h1 className="mb-4 font-serif text-2xl font-bold text-center uppercase sm:text-3xl lg:text-4xl text-stone-800">
-          Featured News
-        </h1>
-        <div className="w-20 h-1 mx-auto mb-8 bg-gradient-to-r from-amber-500 to-amber-700"></div>
+    <div className="max-w-[90rem] px-4 py-8 mx-auto pt-[4rem]">
+      <h1 className="mb-4 font-serif text-2xl font-bold text-center uppercase sm:text-3xl lg:text-4xl text-stone-800">
+        Featured News
+      </h1>
+      <div className="w-20 h-1 mx-auto mb-8 bg-gradient-to-r from-amber-500 to-amber-700"></div>
       <div className="relative">
         {/* Carousel Grid */}
         <div className="grid gap-6 lg:grid-cols-4 md:grid-cols-2">
@@ -57,8 +58,11 @@ const res = await fetch(`${import.meta.env.VITE_API_URL}/news`);
               className="flex flex-col overflow-hidden bg-white rounded shadow"
             >
               <img
- src={`${import.meta.env.VITE_API_URL.replace('/api', '')}/storage/${blog.featured_image}`}
-  alt={blog.title}
+                src={`${import.meta.env.VITE_API_URL.replace(
+                  "/api",
+                  ""
+                )}/storage/${blog.featured_image}`}
+                alt={blog.title}
                 className="object-cover w-full h-48"
               />
               <div className="flex flex-col flex-1 p-4">

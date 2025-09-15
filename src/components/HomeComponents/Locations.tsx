@@ -37,6 +37,12 @@ const Locations = () => {
             <div className="flex items-center justify-center h-24 font-semibold text-white rounded-sm bg-stone-900">
               USA
             </div>
+            <div className="flex items-center justify-center h-24 font-semibold text-white rounded-sm bg-stone-700">
+              Hongkong
+            </div>
+            <div className="flex items-center justify-center h-24 font-semibold text-white bg-gray-800 rounded-sm">
+              Netherlands
+            </div>
           </div>
         </div>
       </div>

@@ -29,7 +29,7 @@ const App = () => {
 
   useEffect(() => {
     // Hide splash after 2.5 seconds (adjust as you like)
-    const timer = setTimeout(() => setLoading(false), 1000);
+    const timer = setTimeout(() => setLoading(false), 700);
     return () => clearTimeout(timer);
   }, []);
 

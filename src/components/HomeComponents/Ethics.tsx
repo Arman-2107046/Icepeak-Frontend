@@ -70,11 +70,7 @@ const Ethics = () => {
                   </p>
                 </div>
 
-                {/* <div className="self-start mt-4 lg:mt-8">
-                  <button className="px-6 py-2 text-sm tracking-widest text-white lowercase transition sm:px-8 sm:py-3 sm:text-base bg-stone-700 hover:bg-stone-600">
-                    read more
-                  </button>
-                </div> */}
+
               </div>
             </div>
           </div>

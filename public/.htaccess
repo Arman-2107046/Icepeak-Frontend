@@ -1,0 +1,13 @@
+RewriteEngine On
+
+# If the requested file or directory exists, serve it as is
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Otherwise, rewrite to index.html (for SPA routing)
+RewriteRule ^ /index.html [L]
+
+# Force correct MIME types for JS and CSS files
+AddType application/javascript .js
+AddType text/css .css

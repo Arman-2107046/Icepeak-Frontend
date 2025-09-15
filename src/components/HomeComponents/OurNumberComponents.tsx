@@ -185,7 +185,7 @@ const imageHover = {
 /* ---------- COMPONENT ---------- */
 const OurNumberComponents = () => {
   const numberCards = [
-    { title: "Key Offices Worldwide", value: "2", bg: "#968476" },
+    { title: "Key Offices Worldwide", value: "4", bg: "#968476" },
     { title: "Years In Business", value: "10", bg: "#5e2500" },
     { title: "Countries Worldwide", value: "10", bg: "gray-500" },
     { title: "Staff Worldwide", value: "50+", bg: "gray-700" },

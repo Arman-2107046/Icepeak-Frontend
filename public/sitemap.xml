@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Home -->
+  <url>
+    <loc>https://icepeakbd.com/</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- About -->
+  <url>
+    <loc>https://icepeakbd.com/about</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Contact -->
+  <url>
+    <loc>https://icepeakbd.com/contact</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog list -->
+  <url>
+    <loc>https://icepeakbd.com/blogs</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Example blog details -->
+  <url>
+    <loc>https://icepeakbd.com/blogs/top-trends-in-global-textile-manufacturing-for-2025</loc>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Product Pages -->
+  <url>
+    <loc>https://icepeakbd.com/knitwear</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://icepeakbd.com/sweater</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://icepeakbd.com/woven-denim</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://icepeakbd.com/woven-non-denim</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://icepeakbd.com/woven-outerwear</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://icepeakbd.com/activewear</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://icepeakbd.com/lingerie</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://icepeakbd.com/workwear</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://icepeakbd.com/sleepwear</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://icepeakbd.com/leather-items</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://icepeakbd.com/handicraft</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://icepeakbd.com/home-textile</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Legal Pages -->
+  <url>
+    <loc>https://icepeakbd.com/privacy</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://icepeakbd.com/service</loc>
+    <priority>0.5</priority>
+  </url>
+
+</urlset>
