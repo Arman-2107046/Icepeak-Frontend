@@ -59,9 +59,12 @@ const WovenNonDenim = () => {
           Our Woven Non-Denim Products
         </h2>
         {loading ? (
-          <p className="text-gray-500">Loading products...</p>
-        ) : products.length === 0 ? (
-          <p className="text-gray-500">No woven non-denim products available.</p>
+          <div className="flex items-center justify-center h-screen">
+            <div className="w-12 h-12 border-4 border-gray-300 rounded-full border-t-blue-600 animate-spin [animation-duration:0.4s]"></div>
+          </div>        ) : products.length === 0 ? (
+          <p className="text-gray-500">
+            No woven non-denim products available.
+          </p>
         ) : (
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
             {products.map((product) => (
@@ -76,6 +79,7 @@ const WovenNonDenim = () => {
                       ""
                     )}/storage/${product.image}`}
                     alt={product.name}
+                    loading="lazy"
                     className="object-cover w-full transition-transform duration-500 transform h-80 group-hover:scale-105"
                   />
                 </div>

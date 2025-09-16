@@ -59,8 +59,9 @@ const HomeTextile = () => {
           Our Home Textile Products
         </h2>
         {loading ? (
-          <p className="text-gray-500">Loading products...</p>
-        ) : products.length === 0 ? (
+          <div className="flex items-center justify-center h-screen">
+            <div className="w-12 h-12 border-4 border-gray-300 rounded-full border-t-blue-600 animate-spin [animation-duration:0.4s]"></div>
+          </div>        ) : products.length === 0 ? (
           <p className="text-gray-500">No home textile products available.</p>
         ) : (
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
@@ -76,17 +77,17 @@ const HomeTextile = () => {
                       ""
                     )}/storage/${product.image}`}
                     alt={product.name}
+                    loading="lazy"
                     className="object-cover w-full transition-transform duration-500 transform h-80 group-hover:scale-105"
                   />
                 </div>
                 <div className="p-5 bg-white">
-                <h3 className="text-lg font-semibold text-gray-800 transition-colors duration-300 group-hover:text-indigo-600">
-  {product.name}
-  {product.gender &&
-    product.gender.toLowerCase() !== "not-applicable" &&
-    ` - ${product.gender}`}
-</h3>
-
+                  <h3 className="text-lg font-semibold text-gray-800 transition-colors duration-300 group-hover:text-indigo-600">
+                    {product.name}
+                    {product.gender &&
+                      product.gender.toLowerCase() !== "not-applicable" &&
+                      ` - ${product.gender}`}
+                  </h3>
 
                   {/* <p className="mt-2 text-sm text-gray-500">
                     Category: {product.category}

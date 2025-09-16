@@ -48,7 +48,8 @@ const Knitwear = () => {
             Explore Our Premium Knitwear Collection
           </h1>
           <p className="max-w-2xl mt-2 text-lg font-light text-white drop-shadow-md">
-            Stylish, comfortable, and versatile knitwear—perfect for every season.
+            Stylish, comfortable, and versatile knitwear—perfect for every
+            season.
           </p>
         </div>
       </section>
@@ -59,8 +60,9 @@ const Knitwear = () => {
           Our Knitwear Products
         </h2>
         {loading ? (
-          <p className="text-gray-500">Loading products...</p>
-        ) : products.length === 0 ? (
+          <div className="flex items-center justify-center h-screen">
+            <div className="w-12 h-12 border-4 border-gray-300 rounded-full border-t-blue-600 animate-spin [animation-duration:0.4s]"></div>
+          </div>        ) : products.length === 0 ? (
           <p className="text-gray-500">No knitwear products available.</p>
         ) : (
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
@@ -76,17 +78,17 @@ const Knitwear = () => {
                       ""
                     )}/storage/${product.image}`}
                     alt={product.name}
+                    loading="lazy"
                     className="object-cover w-full transition-transform duration-500 transform h-80 group-hover:scale-105"
                   />
                 </div>
                 <div className="p-5 bg-white">
-                <h3 className="text-lg font-semibold text-gray-800 transition-colors duration-300 group-hover:text-indigo-600">
+                  <h3 className="text-lg font-semibold text-gray-800 transition-colors duration-300 group-hover:text-indigo-600">
                     {product.name}
                     {product.gender &&
                       product.gender.toLowerCase() !== "not-applicable" &&
                       ` - ${product.gender}`}
                   </h3>
-
                 </div>
                 <div className="absolute inset-0 transition-opacity duration-300 opacity-0 bg-gradient-to-t from-black/20 to-transparent group-hover:opacity-100"></div>
               </div>
